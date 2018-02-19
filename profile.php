@@ -18,7 +18,6 @@ if(!$system['system_public']) {
 if(is_empty($_GET['username']) || !valid_username($_GET['username'])) {
 	_error(404);
 }
-print_r($_GET);
 try {
 
 	// [1] get main profile info
