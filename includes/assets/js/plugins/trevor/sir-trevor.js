@@ -1596,8 +1596,8 @@
             '<div class="option-popup">',
             '<a href="javascript:void(0)" onclick="$(this).parent().parent().removeClass(\'showNow\')" ><i class="fa fa-times"></i></a>',
             '<ul>',
-            '<li> <p> Font Size : <input  type="text" name="style_font" id="style_font" size="3" /> </p> </li>',
-            '<li> <p> Font Color : <input  type="text" name="style_font_color" id="style_font_color" size="6" /> </p> </li>',
+            '<li> <p> Font Size : <input  type="text" data-proparty="font-size:" name="style_font" id="style_font" size="3" /> </p> </li>',
+            '<li> <p> Font Color : <input  type="text" data-proparty="color:" name="style_font_color" id="style_font_color" size="6" /> </p> </li>',
             '<li> <p><div class="btn-group"><span style="float:left; display:inline-block; margin-right: 10px;">Text Align</span> ',
             '<a href="javascript:void(0)" data-value="left" class="btn btn-primary btn_text_align">Left</a>',
             '<a href="javascript:void(0)"  data-value="center" class="btn btn-primary btn_text_align">Center</a>',
@@ -1606,7 +1606,7 @@
             '</ul>',
             '<div class="text-right"><a href="javascript:void(0)" class="btn btn-primary save_the_styles" id=""> Save </a></div>',
             '</div>',
-            '<input type="hidden" name="style_property" id="test_r" placeholder="Attribute" >',
+            '<input type="hidden" name="style_property" id="style_property" placeholder="Attribute" >',
             '</div>'
         ].join("\n");
 
@@ -1838,11 +1838,15 @@
                 //this.check_again();
                 var onStyleConfirm = function(e) {
                     e.preventDefault();
-                    alert('savestyle');
+                    var style_property = $('#style_property').val();
+                    var font_size = $('#style_font').attr('data-proparty')+$('#style_font').val()+'px;';
+                    var font_color = $('#style_font_color').attr('data-proparty')+$('#style_font_color').val()+';';
+                    $('#style_property').val(font_size+font_color);
                 };
-                onStyleConfirm.call(this, new Event('click'));
+                //onStyleConfirm.call(this, new Event('click'));
                 this.$inner.on('click', '.save_the_styles',
                         _.bind(onStyleConfirm, this));
+                
             },
 
             onDeleteClick: function(ev) {
