@@ -1,0 +1,2 @@
+[19-Feb-2018 06:23:10 Europe/Berlin] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /home/web/public_sc/Script/bootstrap.php on line 65
+[19-Feb-2018 06:23:10 Europe/Berlin] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/web/public_sc/Script/bootstrap.php on line 66

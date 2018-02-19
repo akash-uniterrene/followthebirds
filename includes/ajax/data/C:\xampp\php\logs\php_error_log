@@ -1,0 +1,55 @@
+[03-Feb-2018 10:26:39 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/web/public_sc/Script/includes/class-user.php on line 5550
+[03-Feb-2018 10:26:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/web/public_sc/Script/includes/class-user.php on line 5550
+[03-Feb-2018 10:26:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/web/public_sc/Script/includes/class-user.php on line 5550
+[03-Feb-2018 10:26:43 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/web/public_sc/Script/includes/class-user.php on line 5550
+[03-Feb-2018 11:11:58 UTC] PHP Fatal error:  Cannot redeclare User::get_page_invites() in /home/web/public_sc/Script/includes/class-user.php on line 5682
+[03-Feb-2018 11:11:59 UTC] PHP Fatal error:  Cannot redeclare User::get_page_invites() in /home/web/public_sc/Script/includes/class-user.php on line 5682
+[03-Feb-2018 11:22:18 UTC] PHP Parse error:  syntax error, unexpected '}', expecting variable (T_VARIABLE) or '$' in /home/web/public_sc/Script/includes/class-user.php on line 5556
+[03-Feb-2018 11:31:47 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/web/public_sc/Script/includes/class-user.php on line 5551
+[03-Feb-2018 13:33:36 UTC] PHP Parse error:  syntax error, unexpected '`' in /home/web/public_sc/Script/includes/class-user.php on line 5576
+[03-Feb-2018 13:33:37 UTC] PHP Parse error:  syntax error, unexpected '`' in /home/web/public_sc/Script/includes/class-user.php on line 5576
+[05-Feb-2018 06:57:27 Europe/Berlin] PHP Fatal error:  Class 'Smarty' not found in /home/web/public_sc/Script/bootstrap.php on line 164
+[05-Feb-2018 07:53:43 UTC] PHP Fatal error:  Cannot redeclare User::save_template() in /home/web/public_sc/Script/includes/class-user.php on line 5619
+[05-Feb-2018 09:32:22 UTC] PHP Parse error:  syntax error, unexpected '.=' (T_CONCAT_EQUAL) in /home/web/public_sc/Script/includes/class-user.php on line 5627
+[05-Feb-2018 09:43:36 UTC] PHP Parse error:  syntax error, unexpected '$value' (T_VARIABLE) in /home/web/public_sc/Script/includes/class-user.php on line 5623
+[05-Feb-2018 09:43:37 UTC] PHP Parse error:  syntax error, unexpected '$value' (T_VARIABLE) in /home/web/public_sc/Script/includes/class-user.php on line 5623
+[05-Feb-2018 10:25:16 UTC] PHP Parse error:  syntax error, unexpected '" WHERE template_id = 4"' (T_CONSTANT_ENCAPSED_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5622
+[05-Feb-2018 11:22:21 UTC] PHP Parse error:  syntax error, unexpected '" )"' (T_CONSTANT_ENCAPSED_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5599
+[05-Feb-2018 12:06:46 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/web/public_sc/Script/includes/class-user.php on line 5614
+[05-Feb-2018 12:06:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/web/public_sc/Script/includes/class-user.php on line 5614
+[07-Feb-2018 12:30:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 156
+[07-Feb-2018 12:30:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 156
+[08-Feb-2018 09:10:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/ImageConverter.php on line 35
+[08-Feb-2018 09:10:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/ImageConverter.php on line 35
+[08-Feb-2018 13:46:02 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/HeadingConverter.php on line 22
+[08-Feb-2018 13:46:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/HeadingConverter.php on line 22
+[08-Feb-2018 13:46:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/HeadingConverter.php on line 22
+[08-Feb-2018 13:46:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/HeadingConverter.php on line 22
+[08-Feb-2018 15:18:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$grafs' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1206
+[09-Feb-2018 06:55:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 168
+[09-Feb-2018 06:55:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 168
+[09-Feb-2018 06:55:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 168
+[09-Feb-2018 07:21:00 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 28
+[09-Feb-2018 07:21:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 28
+[09-Feb-2018 07:24:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'Markdown' (T_STRING) in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/BaseConverter.php on line 30
+[09-Feb-2018 11:45:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1548
+[09-Feb-2018 11:45:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1548
+[09-Feb-2018 12:28:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$strong' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1041
+[09-Feb-2018 12:28:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$strong' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1041
+[12-Feb-2018 10:48:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Types/IframeConverter.php on line 37
+[16-Feb-2018 06:16:03 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/web/public_sc/Script/includes/class-user.php on line 5537
+[16-Feb-2018 06:16:06 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/web/public_sc/Script/includes/class-user.php on line 5537
+[16-Feb-2018 06:26:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/web/public_sc/Script/includes/class-user.php on line 5538
+[16-Feb-2018 08:14:53 UTC] PHP Fatal error:  Cannot redeclare User::get_page_templates() in /home/web/public_sc/Script/includes/class-user.php on line 5566
+[16-Feb-2018 08:14:53 UTC] PHP Fatal error:  Cannot redeclare User::get_page_templates() in /home/web/public_sc/Script/includes/class-user.php on line 5566
+[16-Feb-2018 08:14:54 UTC] PHP Fatal error:  Cannot redeclare User::get_page_templates() in /home/web/public_sc/Script/includes/class-user.php on line 5566
+[16-Feb-2018 08:14:55 UTC] PHP Fatal error:  Cannot redeclare User::get_page_templates() in /home/web/public_sc/Script/includes/class-user.php on line 5566
+[16-Feb-2018 08:14:55 UTC] PHP Fatal error:  Cannot redeclare User::get_page_templates() in /home/web/public_sc/Script/includes/class-user.php on line 5566
+[16-Feb-2018 11:05:46 UTC] PHP Fatal error:  Cannot redeclare User::save_template() in /home/web/public_sc/Script/includes/class-user.php on line 5636
+[16-Feb-2018 11:05:48 UTC] PHP Fatal error:  Cannot redeclare User::save_template() in /home/web/public_sc/Script/includes/class-user.php on line 5636
+[16-Feb-2018 11:05:50 UTC] PHP Fatal error:  Cannot redeclare User::save_template() in /home/web/public_sc/Script/includes/class-user.php on line 5636
+[16-Feb-2018 11:40:56 UTC] PHP Fatal error:  Cannot redeclare User::view_page_template() in /home/web/public_sc/Script/includes/class-user.php on line 5600
+[16-Feb-2018 11:40:59 UTC] PHP Fatal error:  Cannot redeclare User::view_page_template() in /home/web/public_sc/Script/includes/class-user.php on line 5600
+[16-Feb-2018 11:47:11 UTC] PHP Fatal error:  Cannot redeclare User::update_template() in /home/web/public_sc/Script/includes/class-user.php on line 5697
+[16-Feb-2018 12:38:53 UTC] PHP Fatal error:  Cannot redeclare User::get_active_template() in /home/web/public_sc/Script/includes/class-user.php on line 5651
+[16-Feb-2018 12:38:55 UTC] PHP Fatal error:  Cannot redeclare User::get_active_template() in /home/web/public_sc/Script/includes/class-user.php on line 5651

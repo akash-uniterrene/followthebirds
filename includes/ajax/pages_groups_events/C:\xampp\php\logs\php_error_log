@@ -1,0 +1,50 @@
+[03-Feb-2018 10:52:34 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 40
+[03-Feb-2018 10:23:34 UTC] PHP Fatal error:  Function name must be a string in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 50
+[03-Feb-2018 10:24:50 UTC] PHP Fatal error:  Function name must be a string in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 50
+[03-Feb-2018 10:27:38 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/web/public_sc/Script/includes/class-user.php on line 5550
+[05-Feb-2018 07:20:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 66
+[05-Feb-2018 06:22:19 UTC] PHP Fatal error:  Class 'ToHtmlContext' not found in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 29
+[05-Feb-2018 06:23:34 UTC] PHP Fatal error:  Class 'BaseConverter' not found in /home/web/public_sc/Script/includes/libs/Sioen/ToHtmlContext.php on line 40
+[05-Feb-2018 07:30:07 Europe/Berlin] PHP Fatal error:  Interface 'ConverterInterface' not found in /home/web/public_sc/Script/includes/libs/Sioen/Types/BaseConverter.php on line 4
+[05-Feb-2018 06:31:06 UTC] PHP Fatal error:  Class 'Markdown' not found in /home/web/public_sc/Script/includes/libs/Sioen/Types/BaseConverter.php on line 31
+[05-Feb-2018 07:37:44 Europe/Berlin] PHP Fatal error:  Cannot declare class Sioen\Tests\Converter because the name is already in use in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 18
+[05-Feb-2018 07:39:23 Europe/Berlin] PHP Fatal error:  Cannot declare class Sioen\Converter\Converter because the name is already in use in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 18
+[05-Feb-2018 07:40:00 Europe/Berlin] PHP Fatal error:  Cannot declare class Converter\Converter because the name is already in use in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 18
+[05-Feb-2018 07:40:26 Europe/Berlin] PHP Fatal error:  Cannot declare class Converter because the name is already in use in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 18
+[05-Feb-2018 06:40:58 UTC] PHP Fatal error:  Class 'ToHtmlContext' not found in /home/web/public_sc/Script/includes/libs/Sioen/Converter.php on line 29
+[05-Feb-2018 06:59:11 UTC] PHP Fatal error:  Call to undefined method Sioen::toHtml() in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 59
+[05-Feb-2018 07:59:57 Europe/Berlin] PHP Fatal error:  Class 'Converter' not found in /home/web/public_sc/Script/bootstrap.php on line 164
+[05-Feb-2018 08:01:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'Sioen' (T_STRING) in /home/web/public_sc/Script/bootstrap.php on line 164
+[05-Feb-2018 07:55:41 UTC] PHP Parse error:  syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in /home/web/public_sc/Script/includes/class-user.php on line 5619
+[05-Feb-2018 09:32:27 UTC] PHP Parse error:  syntax error, unexpected '.=' (T_CONCAT_EQUAL) in /home/web/public_sc/Script/includes/class-user.php on line 5627
+[05-Feb-2018 09:46:05 UTC] PHP Parse error:  syntax error, unexpected '$value' (T_VARIABLE) in /home/web/public_sc/Script/includes/class-user.php on line 5623
+[05-Feb-2018 09:55:37 UTC] PHP Parse error:  syntax error, unexpected 'page_id' (T_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5621
+[05-Feb-2018 09:56:21 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/web/public_sc/Script/includes/class-user.php on line 5621
+[05-Feb-2018 09:56:48 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5622
+[05-Feb-2018 09:59:54 UTC] PHP Parse error:  syntax error, unexpected '"UPDATE page_template SET  pag' (T_CONSTANT_ENCAPSED_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5622
+[05-Feb-2018 10:00:17 UTC] PHP Parse error:  syntax error, unexpected '"UPDATE page_template SET  pag' (T_CONSTANT_ENCAPSED_STRING) in /home/web/public_sc/Script/includes/class-user.php on line 5622
+[05-Feb-2018 10:36:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Converter.php on line 28
+[05-Feb-2018 10:36:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Converter.php on line 28
+[05-Feb-2018 12:07:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/web/public_sc/Script/includes/class-user.php on line 5614
+[06-Feb-2018 06:09:24 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/web/public_sc/Script/includes/class-user.php on line 5606
+[06-Feb-2018 06:38:17 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 52
+[06-Feb-2018 06:38:17 UTC] PHP Warning:  mysql_real_escape_string(): No such file or directory in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 52
+[06-Feb-2018 06:38:17 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 52
+[06-Feb-2018 06:38:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Sioen/Converter.php on line 28
+[06-Feb-2018 06:38:17 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 62
+[06-Feb-2018 06:38:17 UTC] PHP Warning:  mysql_real_escape_string(): No such file or directory in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 62
+[06-Feb-2018 06:38:17 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/web/public_sc/Script/includes/ajax/pages_groups_events/create.php on line 62
+[09-Feb-2018 06:55:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 168
+[09-Feb-2018 07:01:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$text' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 437
+[09-Feb-2018 11:05:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php:1547) in /home/web/public_sc/Script/includes/functions.php on line 446
+[09-Feb-2018 11:06:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php:1547) in /home/web/public_sc/Script/includes/functions.php on line 446
+[09-Feb-2018 11:07:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1011
+[09-Feb-2018 11:07:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1011
+[09-Feb-2018 11:07:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1011
+[09-Feb-2018 11:07:43 UTC] PHP Warning:  preg_split(): Empty regular expression in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1045
+[09-Feb-2018 11:07:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php:1547) in /home/web/public_sc/Script/includes/functions.php on line 446
+[09-Feb-2018 11:08:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php:1547) in /home/web/public_sc/Script/includes/functions.php on line 446
+[09-Feb-2018 11:09:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php:1547) in /home/web/public_sc/Script/includes/functions.php on line 446
+[09-Feb-2018 11:12:50 UTC] PHP Warning:  preg_split(): Empty regular expression in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1045
+[09-Feb-2018 11:17:52 UTC] PHP Warning:  preg_split(): Empty regular expression in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1045
+[09-Feb-2018 12:29:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$strong' (T_VARIABLE), expecting ',' or ';' in /home/web/public_sc/Script/includes/libs/third_party/Michelf/Markdown.php on line 1041
