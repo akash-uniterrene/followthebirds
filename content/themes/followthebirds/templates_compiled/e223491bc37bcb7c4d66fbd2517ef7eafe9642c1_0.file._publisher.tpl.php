@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-01 10:43:33
+/* Smarty version 3.1.31, created on 2018-03-14 12:45:20
   from "/home/web/public_sc/Script/content/themes/followthebirds/templates/_publisher.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a72ef55114978_27272474',
+  'unifunc' => 'content_5aa9196073f174_81474704',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e223491bc37bcb7c4d66fbd2517ef7eafe9642c1' => 
     array (
       0 => '/home/web/public_sc/Script/content/themes/followthebirds/templates/_publisher.tpl',
-      1 => 1509912567,
+      1 => 1521031507,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_emoji-menu.tpl' => 1,
   ),
 ),false)) {
-function content_5a72ef55114978_27272474 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5aa9196073f174_81474704 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="x-form publisher" data-handle="<?php echo $_smarty_tpl->tpl_vars['_handle']->value;?>
 " <?php if ($_smarty_tpl->tpl_vars['_id']->value) {?>data-id="<?php echo $_smarty_tpl->tpl_vars['_id']->value;?>
@@ -300,8 +300,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
             <?php if ($_smarty_tpl->tpl_vars['system']->value['photos_enabled']) {?>
                 <li data-toggle="tooltip" data-placement="top" title='<?php echo __("Add Photos");?>
 '>
-                    <span class="publisher-tools-attach js_publisher-photos">
-                        <i class="fa fa-camera fa-fw js_x-uploader" data-handle="publisher" data-multiple="true"></i>
+                    <span class="publisher-tools-attach js_publisher-photos" data-toggle="modal" data-url="#modal-upload_photos">
+                        <i class="fa fa-camera fa-fw " data-handle="publisher" data-multiple="true"></i>
                     </span>
                 </li>
             <?php }?>

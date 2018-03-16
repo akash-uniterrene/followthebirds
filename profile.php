@@ -52,7 +52,6 @@ try {
 		$profile['mutual_friends_count'] = $user->get_mutual_friends_count($profile['user_id']);
 		$profile['mutual_friends'] = $user->get_mutual_friends($profile['user_id']);
 	}
-	
 	// [2] get view content
 	switch ($_GET['view']) {
 
@@ -107,12 +106,91 @@ try {
 				$profile['friends_count'] = count($user->get_friends_ids($profile['user_id']));
 			}
 			break;
-
 		case 'photos':
 			/* get photos */
 			$profile['photos'] = $user->get_photos($profile['user_id']);
 			break;
+		case 'vault':
+			/* get files */
+			$profile['vaultname'] = $_GET['id'];
+			$get_vault = $db->query("SELECT *  FROM `vault` WHERE `folder_name` LIKE '{$_GET['id']}' AND `username` LIKE '{$user->_data['user_name']}'") or _error(SQL_ERROR);
+			if($get_vault->num_rows > 0) {
+				$row = $get_vault->fetch_assoc();
+				$profile['vaultType'] = $row['type'];
+			}	
+			$folder = __DIR__.'/'.$system['uploads_directory'].'/vault/'.$user->_data['user_name'].'/'.$_GET['id'];
+			$files = array();
+			if ($handle = opendir($folder)) {
+				while (false !== ($entry = readdir($handle))) {
+					if ($entry != "." && $entry != "..") {
+						$files[] = $entry;
+					}
+				}
+				closedir($handle);
+			}
+			$smarty->assign('files', $files);
+			break;
 
+		case 'showVault':
+			$get_vault = $db->query("SELECT *  FROM `vault` WHERE `type` LIKE '{$_GET['id']}' AND `username` LIKE '{$user->_data['user_name']}'") or _error(SQL_ERROR);
+			if($get_vault->num_rows > 0) {
+				$temp = array();
+				while($row = $get_vault->fetch_assoc()){
+					$dataUrl = $system['system_url'].'/'.$user->_data['user_name'].'/show-files/'.$row['folder_name'];
+					$temp[$dataUrl] = $row;
+				}
+			}			
+			return_json($temp);
+			break;
+		case 'show-files':
+			$profile['vaultname'] = $_GET['id'];
+			$get_vault = $db->query("SELECT *  FROM `vault` WHERE `folder_name` LIKE '{$_GET['id']}' AND `username` LIKE '{$user->_data['user_name']}'") or _error(SQL_ERROR);
+			if($get_vault->num_rows > 0) {
+				$row = $get_vault->fetch_assoc();
+			}	
+			$path = $system['system_url'].'/content/uploads/vault/'.$profile['user_name'].'/'.$profile['vaultname'];
+			$folder = __DIR__.'/'.$system['uploads_directory'].'/vault/'.$user->_data['user_name'].'/'.$_GET['id'];
+			$files = array();
+			if ($handle = opendir($folder)) {
+				while (false !== ($entry = readdir($handle))) {
+					if ($entry != "." && $entry != "..") {
+						if($row['type'] == 'image'){
+							$files[] = "<div class='col-md-3' data-src='vault/".$profile['user_name'].'/'.$profile['vaultname'].'/'.$entry."' ><img width='100' height='100' src='".$path.'/'.$entry."'></div>";
+						}
+					}
+				}
+				closedir($handle);
+			}
+			return_json($files);
+			break;
+		case 'add-files':
+			/* get photos */
+			$profile['add-files'] = '';
+			$profile['vaultname'] = $_GET['id'];
+			$profile['vaultType'] = $_GET['id'];
+			
+			$get_vault = $db->query("SELECT *  FROM `vault` WHERE `folder_name` LIKE '{$_GET['id']}' AND `username` LIKE '{$user->_data['user_name']}'") or _error(SQL_ERROR);
+			if($get_vault->num_rows > 0) {
+				$row = $get_vault->fetch_assoc();
+				$profile['vaultType'] = $row['type'];
+			 }
+			
+			break;
+
+		case 'uploadVault':
+				$uploadedFile = $_FILES['ssi-upload']['tmp_name'];
+				$uploadedDir = __DIR__.'/'.$system['uploads_directory'].'/vault/'.$user->_data['user_name'].'/'.$_GET['id'];
+
+				// create an image name
+				$fileName = strtotime(date('d-m-y h:i:s')).'_'.$_FILES['ssi-upload']['name'];
+
+				// upload the image
+				if(move_uploaded_file($uploadedFile, $uploadedDir.'/'.$fileName)){
+					return_json( array('success' => true, 'message' => __("Your file has been uploaded")) );	
+				}else{
+					return_json( array('error' => true, 'message' =>  __("sorry! file uploading proccess failed")) );
+				}
+			break;	
 		case 'albums':
 			/* get albums */
 			$profile['albums'] = $user->get_albums($profile['user_id']);
@@ -121,7 +199,7 @@ try {
 		case 'album':
 			/* get album */
 			$album = $user->get_album($_GET['id']);
-			if(!$album || $album['in_group'] || $album['user_type'] == "page" || ($album['user_type'] == "user" && $album['user_id'] != $profile['user_id'])) {
+			if(!$album || $album['in_group'] || $album['user_type'] == "page" || ($album['user_type'] == "user" && $album['user_id'] != $profile['user_id'])) 			  {
 				_error(404);
 			}
 			/* assign variables */

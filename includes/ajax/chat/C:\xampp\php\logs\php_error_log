@@ -58,3 +58,6 @@
 [16-Feb-2018 12:38:55 UTC] PHP Fatal error:  Cannot redeclare User::get_active_template() in /home/web/public_sc/Script/includes/class-user.php on line 5651
 [16-Feb-2018 12:38:56 UTC] PHP Fatal error:  Cannot redeclare User::get_active_template() in /home/web/public_sc/Script/includes/class-user.php on line 5651
 [17-Feb-2018 05:30:16 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/web/public_sc/Script/includes/ajax/chat/live.php on line 90
+[19-Feb-2018 13:53:36 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/web/public_sc/Script/includes/ajax/chat/live.php on line 90
+[20-Feb-2018 06:11:42 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/web/public_sc/Script/includes/ajax/chat/live.php on line 90
+[14-Mar-2018 10:50:54 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /home/web/public_sc/Script/includes/ajax/chat/live.php on line 90

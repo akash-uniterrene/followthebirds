@@ -1,2 +1,12 @@
-[19-Feb-2018 06:23:10 Europe/Berlin] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /home/web/public_sc/Script/bootstrap.php on line 65
-[19-Feb-2018 06:23:10 Europe/Berlin] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/web/public_sc/Script/bootstrap.php on line 66
+[12-Mar-2018 12:09:11 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:vault-customize.tpl' in 'settings.tpl' <-- 
+  thrown in /home/web/public_sc/Script/includes/libs/Smarty/sysplugins/smarty_internal_template.php on line 185
+[12-Mar-2018 12:09:51 UTC] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home/web/public_sc/Script/content/themes/followthebirds/templates/vault-customize.tpl"  on line 20 "okBtn: {className: 'btn btn-primary btn-sm'},"  - Unexpected ": ", expected one of: "}" <-- 
+  thrown in /home/web/public_sc/Script/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php on line 20
+[12-Mar-2018 12:10:18 UTC] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home/web/public_sc/Script/content/themes/followthebirds/templates/vault-customize.tpl"  on line 20 "okBtn: {className: 'btn btn-primary btn-sm'},"  - Unexpected ": ", expected one of: "}" <-- 
+  thrown in /home/web/public_sc/Script/includes/libs/Smarty/sysplugins/smarty_internal_templatecompilerbase.php on line 20
+[15-Mar-2018 06:21:52 Europe/Berlin] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /home/web/public_sc/Script/bootstrap.php on line 65
+[15-Mar-2018 06:21:52 Europe/Berlin] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/web/public_sc/Script/bootstrap.php on line 66
+[15-Mar-2018 08:03:15 Europe/Berlin] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /home/web/public_sc/Script/bootstrap.php on line 65
+[15-Mar-2018 08:03:15 Europe/Berlin] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/web/public_sc/Script/bootstrap.php on line 66
+[15-Mar-2018 08:03:17 Europe/Berlin] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /home/web/public_sc/Script/bootstrap.php on line 65
+[15-Mar-2018 08:03:17 Europe/Berlin] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/web/public_sc/Script/bootstrap.php on line 66

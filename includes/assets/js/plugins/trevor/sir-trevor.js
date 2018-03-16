@@ -284,7 +284,7 @@
                     'title': "Groups"
                 },
 				post: {
-                    'title': "Post"
+                    'title': "Posts"
                 },
                 text: {
                     'title': "Text"
@@ -2299,7 +2299,6 @@
         icon_name: 'heading',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=heading]').val(data.heading);
         }
@@ -2314,12 +2313,11 @@
         title: function() {
             return i18n.t('blocks:profile:title'); },
 
-        editorHTML: '<div class="profile-block"><input name="profile" type="hidden" value="Profile Photo"></input></div><div class="st-required st-text-block st-text-block--profile" contenteditable="true">Profile Photo <img src="http://localhost/public_sc/Script/content/themes/followthebirds/images/blank_profile_male.jpg"></div>',
+        editorHTML: '<div class="profile-block"><input name="profile" type="hidden" value="Profile Photo"></input></div><div class="st-required st-text-block st-text-block--profile builder-widget" contenteditable="true">Profile Photo <img src="http://localhost/public_sc/Script/content/themes/followthebirds/images/blank_profile_male.jpg"></div>',
 
-        icon_name: 'profile',
+        icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=profile]').val(data.profile);
         }
@@ -2334,12 +2332,11 @@
         title: function() {
             return i18n.t('blocks:about:title'); },
 
-        editorHTML: '<div class="about-block"><input name="about" type="hidden" value="About Photo"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--about" contenteditable="true">About Me</div>',
+        editorHTML: '<div class="about-block"><input name="about" type="hidden" value="About Photo"></input></div><div class="st-required st-text-block st-text-block--about builder-widget" contenteditable="true">About Me</div>',
 
         icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=about]').val(data.about);
         }
@@ -2354,12 +2351,11 @@
         title: function() {
             return i18n.t('blocks:friends:title'); },
 
-        editorHTML: '<div class="friends-block"><input name="friends" type="hidden" value="Friends"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--friends" contenteditable="true">Friends</div>',
+        editorHTML: '<div class="friends-block"><input name="friends" type="hidden" value="Friends"></input></div><div class="st-required st-text-block st-text-block--friends builder-widget" contenteditable="true">Friends</div>',
 
         icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=friends]').val(data.friends);
         }
@@ -2374,12 +2370,11 @@
         title: function() {
             return i18n.t('blocks:pages:title'); },
 
-        editorHTML: '<div class="pages-block"><input name="pages" type="hidden" value="Pages"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--pages" contenteditable="true">Pages</div>',
+        editorHTML: '<div class="pages-block"><input name="pages" type="hidden" value="Pages"></input></div><div class="st-required st-text-block st-text-block--pages builder-widget" contenteditable="true">Pages</div>',
 
         icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=pages]').val(data.pages);
         }
@@ -2394,12 +2389,11 @@
         title: function() {
             return i18n.t('blocks:groups:title'); },
 
-        editorHTML: '<div class="groups-block"><input name="groups" type="hidden" value="Groups"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--groups" contenteditable="true">Groups</div>',
+        editorHTML: '<div class="groups-block"><input name="groups" type="hidden" value="Groups"></input></div><div class="st-required st-text-block st-text-block--groups builder-widget" contenteditable="true">Groups</div>',
 
         icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=groups]').val(data.groups);
         }
@@ -2414,12 +2408,11 @@
         title: function() {
             return i18n.t('blocks:cover:title'); },
 
-        editorHTML: '<div class="cover-block"><input name="cover" type="hidden" value="Cover Photo"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--cover" contenteditable="true">Cover Photo</div>',
+        editorHTML: '<div class="cover-block"><input name="cover" type="hidden" value="Cover Photo"></input></div><div class="st-required st-text-block st-text-block--cover builder-widget builder-widget" contenteditable="true">Cover Photo</div>',
 
-        icon_name: 'cover',
+        icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=cover]').val(data.cover);
         }
@@ -2434,12 +2427,11 @@
         title: function() {
             return i18n.t('blocks:post:title'); },
 
-        editorHTML: '<div class="post-block"><input name="post" type="hidden" value="Post"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--post" contenteditable="true">Posts</div>',
+        editorHTML: '<div class="post-block"><input name="post" type="hidden" value="Post"></input></div><div class="st-required st-text-block st-text-block--post builder-widget" contenteditable="true">Posts</div>',
 
-        icon_name: 'post',
+        icon_name: 'tick',
 
         loadData: function(data) {
-            console.log(data);
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
             this.$('[name=post]').val(data.post);
         }
@@ -2452,9 +2444,9 @@
 			title: function() {
 				return i18n.t('blocks:photo:title'); },
 
-			editorHTML: '<div class="photo-block"><input name="photo" type="hidden" value="Photo"></input></div><div class="profile-cover-wrapper st-required st-text-block st-text-block--photo" contenteditable="true">Photos</div>',
+			editorHTML: '<div class="photo-block"><input name="photo" type="hidden" value="Photo"></input></div><div class="st-required st-text-block st-text-block--photo builder-widget" contenteditable="true">Photos</div>',
 
-			icon_name: 'image',
+			icon_name: 'tick',
 
 			loadData: function(data) {
 				console.log(data);
@@ -2477,7 +2469,7 @@
         droppable: true,
         uploadable: true,
 
-        icon_name: 'image',
+        icon_name: 'tick',
 
         loadData: function(data) {
             // Create our image tag
@@ -2637,7 +2629,6 @@
 
         loadData: function(data) {
             this.getTextBlock().html(SirTrevor.toHTML(data.text, this.type));
-            //alert(SirTrevor.toHTML(data.text, this.type))
         }
     });
     SirTrevor.Blocks.Tweet = (function() {
@@ -2759,7 +2750,6 @@
 
             title: function() {
                 return i18n.t('blocks:list:title'); },
-
             icon_name: 'list',
 
             editorHTML: function() {
@@ -3376,7 +3366,7 @@
                 SirTrevor.EventBus.on("formatter:hide", this.formatBar.hide);
 
                 this.$wrapper.prepend(this.fl_block_controls.render().$el);
-                $(document.body).append(this.formatBar.render().$el);
+                //$(document.body).append(this.formatBar.render().$el);
                 this.$outer.append(this.block_controls.render().$el);
 
                 $(window).bind('click', this.hideAllTheThings);

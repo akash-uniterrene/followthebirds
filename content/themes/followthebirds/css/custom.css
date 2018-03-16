@@ -871,6 +871,24 @@ footer p{
 	z-index: 999;
 }
 
+.copy-right-left{
+	text-align: left;
+}
+.copy-right-right{
+	text-align: right;
+}
+.copy-right-right ul li{
+	display: inline-block;
+}
+.copy-right-right ul li a{
+	color:#fff;
+	font-weight: 300;
+	font-size: 14px;
+}
+.copy-right-right ul li a:hover{
+	color: #bd1fad;
+}
+
 
 #banner-slides .panel{
 	background-color:transparent;
@@ -898,4 +916,3 @@ footer .col-lg-6 li a {
   margin-left: 15px;
 }
 /* Akash - css End*/
-

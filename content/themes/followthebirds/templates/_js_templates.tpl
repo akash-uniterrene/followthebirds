@@ -21,7 +21,17 @@
         <a class="btn btn-primary" href="{$system['system_url']}/signin">{__("Login")}</a>
     </div>
 </script>
-
+<script id="modal-upload_photos" type="text/template">
+    <div class="modal-header">
+        <h5 class="modal-title">{__("Upload Photos")}</h5>
+    </div>
+    <div class="modal-body">
+        {include file='_upload_photos.tpl'}
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-primary" id="addtopost" href="javascript:void(0)">{__("Insert")}</a>
+    </div>
+</script>
 <script id="modal-message" type="text/template">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
@@ -745,6 +755,47 @@
                 <div class="form-group">
                     <label for="description">{__("About")}</label>
                     <textarea class="form-control" name="description" name="description"></textarea>
+                </div>
+                <!-- error -->
+                <div class="alert alert-danger mb0 mt10 x-hidden" role="alert"></div>
+                <!-- error -->
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">{__("Create")}</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">{__("Cancel")}</button>
+            </div>
+        </form>
+    </script>
+    
+    <!-- Create vault -->
+    <script id="create-vault" type="text/template">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h5 class="modal-title">{__("Create New Vault")}</h5>
+        </div>
+        <form class="js_ajax-forms" data-url="users/vault.php?do=create">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="title">{__("Name Your Vault")}</label>
+                    <input type="text" class="form-control" name="title" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="username">{__("Web Address")}</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">{$system['system_url']}/{$user->_data['user_name']}/vault/</span>
+                        <input type="text" class="form-control" name="vaultname" id="vaultname">
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="username">{__("File Type")}</label>
+                    <div class="input-group">
+                        <select name="file-type">
+							<option value="image">Images</option>
+							<option value="mp4">Videos</option>
+							<option value="mp3">Audio</option>
+							<option value="files">Documents</option>
+						</select>
+                    </div>
                 </div>
                 <!-- error -->
                 <div class="alert alert-danger mb0 mt10 x-hidden" role="alert"></div>

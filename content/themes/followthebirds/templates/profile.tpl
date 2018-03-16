@@ -148,11 +148,31 @@
 										<{$block.data.heading} style="{$block.data.style_property}"> {$block.data.text} </{$block.data.heading}>
 									 {elseif $block.type == 'text'}
 										<p style="{$block.data.style_property}">{$block.data.text}</p>
+									{elseif $block.type == 'video'}
+										{if $block.data.source == 'youtube' }
+											<div class="page-builder-container">
+												<div class="embed-responsive embed-responsive-16by9">
+												<iframe src="//www.youtube.com/embed/{$block.data.remote_id}?rel=0" frameborder="0" allowfullscreen></iframe>
+											</div>
+										{elseif $block.data.source == 'vimeo' }		
+												<div class="page-builder-container">
+													<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="//player.vimeo.com/video/{{$block.data.remote_id}}?title=0&amp;byline=0" frameborder="0"></iframe>
+													</div>
+												</div>
+										{else}
+											<div class="page-builder-container">
+												<video controls> 
+													<source src="{$block.data['file']['url']}" type="video/mp4">
+												</video>
+											</div>
+										{/if}		
 									 {elseif $block.type == 'photo'}
 										{if count($profile['photos']) > 0}
 											<div class="panel panel-default panel-photos">
 												<div class="panel-heading">
-													<i class="fa fa-picture-o fa-fw text-info"></i> <a href="{$system['system_url']}/{$profile['user_name']}/photos">{__("Photos")}</a>
+													<i class="fa fa-picture-o fa-fw text-info"></i>
+													<a href="{$system['system_url']}/{$profile['user_name']}/photos">{__("Photos")}</a>
 												</div>
 												<div class="panel-body">
 													<div class="row">
@@ -611,6 +631,99 @@
                         </div>
                     </div>
                     <!-- albums -->
+                {elseif $view == 'add-files'}
+                     <!-- albums -->
+                    <div class="col-xs-12">
+                        <div class="panel panel-default panel-albums">
+                            <div class="panel-heading with-icon with-nav">
+                                <!-- back to albums -->
+                                <div class="pull-right flip">
+                                    <a href="{$system['system_url']}/{$profile['user_name']}/vault/{$profile['vaultname']}" class="btn btn-default btn-sm">
+                                        <i class="fa fa-plus-circle fa-fw"></i> {__("Back to folder")}
+                                    </a>
+                                </div>
+                                <!-- back to albums -->
+
+                                <!-- panel title -->
+                                <div class="mb20">
+                                    <i class="fa fa-folder fa-lg pr10"></i>
+                                    <strong>{__("Vault")}</strong>
+                                </div>
+                                <!-- panel title -->
+
+                                <!-- panel nav -->
+                                <ul class="nav nav-tabs">
+                                    
+                                </ul>
+                                <!-- panel nav -->
+                            </div>
+                            <div class="panel-body">
+                                {if $profile['vaultType'] eq 'mp3'}
+                                   {include file='audio-vault.tpl'}
+                                {elseif $profile['vaultType'] eq 'image'}
+                                  {include file='vault-customize.tpl'}
+                                {else}
+                                    {include file='audio-vault.tpl'}
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- albums -->                                
+                {elseif $view == 'vault'}
+                    <!-- albums -->
+                    <div class="col-xs-12">
+                        <div class="panel panel-default panel-albums">
+                            <div class="panel-heading with-icon with-nav">
+                                <!-- back to albums -->
+                                <div class="pull-right flip">
+                                    <a href="{$system['system_url']}/{$profile['user_name']}/add-files/{$profile['vaultname']}" class="btn btn-default btn-sm">
+                                        <i class="fa fa-plus-circle fa-fw"></i> {__("Add Files")}
+                                    </a>
+                                </div>
+                                <!-- back to albums -->
+
+                                <!-- panel title -->
+                                <div class="mb20">
+                                    <i class="fa fa-folder fa-lg pr10"></i>
+                                    <strong>{__("Vault")}</strong>
+                                </div>
+                                <!-- panel title -->
+
+                                <!-- panel nav -->
+                                <ul class="nav nav-tabs">
+                                    
+                                </ul>
+                                <!-- panel nav -->
+                            </div>
+                            <div class="panel-body">
+                                {if !empty($files)}                                   
+                                    {foreach $files as $file}
+                                        {if $profile['vaultType'] eq 'mp3'}
+                                            <div style="margin: 10px 0px;">
+                                                <p>{$file}</p>
+                                                <audio width="100%" class="js_mediaelementplayer">
+                                                    <source src="{$system['system_url']}/content/uploads/vault/{$profile['user_name']}/{$profile['vaultname']}/{$file}">
+                                                    {__("Your browser does not support HTML5 audio")}
+                                                </audio>
+                                            </div>
+                                        {elseif $profile['vaultType'] eq 'mp4'}
+                                            <div class="col-md-3">                                      
+                                            <video controls="" >
+                                                    <source src="{$system['system_url']}/content/uploads/vault/{$profile['user_name']}/{$profile['vaultname']}/{$file}" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        {else} 
+                                            <div class="col-md-3">                                      
+<img width="150" height="150" src="{$system['system_url']}/content/uploads/vault/{$profile['user_name']}/{$profile['vaultname']}/{$file}">                                                                  </div>
+                                        {/if}
+                                    {/foreach}
+                                {else}
+                                <p> No record found </p>
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- albums -->        
                 {elseif $view == "followers"}
                     <!-- followers -->
                     <div class="col-xs-12">

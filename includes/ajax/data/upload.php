@@ -109,7 +109,6 @@ try {
                     $image_new_name = $directory.$prefix.$image->_img_ext;
                     $path_tmp = $depth.$system['uploads_directory'].'/'.$image_tmp_name;
                     $path_new = $depth.$system['uploads_directory'].'/'.$image_new_name;
-					echo $path_tmp; exit;
                     /* check if the file uploaded successfully */
                     if(!@move_uploaded_file($file['tmp_name'], $path_tmp)) {
                         if($files_num > 1) {
@@ -133,7 +132,7 @@ try {
                     /* return */
                     $return_files[] = $image_new_name;
                 }
-
+                //echo $return_files;
                 // return the return_files & exit
                 return_json(array("files" => $return_files));
 

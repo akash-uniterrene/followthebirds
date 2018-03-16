@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-16 12:29:49
+/* Smarty version 3.1.31, created on 2018-03-12 12:09:04
   from "/home/web/public_sc/Script/content/themes/followthebirds/templates/settings.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a86cebd7636a0_21502078',
+  'unifunc' => 'content_5aa66de0da9109_21106376',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8ab508e6dee90615555f24b14d885745772d2b0d' => 
     array (
       0 => '/home/web/public_sc/Script/content/themes/followthebirds/templates/settings.tpl',
-      1 => 1518784184,
+      1 => 1520854857,
       2 => 'file',
     ),
   ),
@@ -22,11 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_header.tpl' => 1,
     'file:profile-template-customize.tpl' => 2,
     'file:__custom_fields.tpl' => 5,
+    'file:vault-customize.tpl' => 1,
     'file:__feeds_user.tpl' => 2,
     'file:_footer.tpl' => 1,
   ),
 ),false)) {
-function content_5a86cebd7636a0_21502078 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5aa66de0da9109_21106376 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once '/home/web/public_sc/Script/includes/libs/Smarty/plugins/modifier.date_format.php';
 $_smarty_tpl->_subTemplateRender('file:_head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -65,6 +66,11 @@ $_smarty_tpl->_subTemplateRender('file:_head.tpl', $_smarty_tpl->cache_id, $_sma
                         <li <?php if ($_smarty_tpl->tpl_vars['view']->value == "profile") {?>class="active"<?php }?>>
                             <a href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
 /settings/profile"><i class="fa fa-user fa-fw fa-lg pr10"></i> <?php echo __("Edit Profile");?>
+</a>
+                        </li>
+                        <li <?php if ($_smarty_tpl->tpl_vars['view']->value == "vault") {?>class="active"<?php }?>>
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
+/settings/vault"><i class="fa fa-user fa-fw fa-lg pr10"></i> <?php echo __("Manage Vault");?>
 </a>
                         </li>
                         <li <?php if ($_smarty_tpl->tpl_vars['view']->value == "privacy") {?>class="active"<?php }?>>
@@ -826,7 +832,26 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 
 							</button>
 						</div>
-					</div>	
+					</div>
+                <?php } elseif ($_smarty_tpl->tpl_vars['view']->value == "create-vault") {?>
+		                <?php $_smarty_tpl->_subTemplateRender('file:vault-customize.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+	
+                <?php } elseif ($_smarty_tpl->tpl_vars['view']->value == "vault") {?>
+                    <div class="panel-heading with-icon">
+                        <!-- panel title -->
+                        <i class="fa fa-lock pr5 panel-icon"></i>
+                        <strong><?php echo __("Manage Vault");?>
+</strong>
+                        <!-- panel title -->
+						<div class="mt10 pull-right flip">
+							<a class="btn btn-success btn-sm" href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
+/settings/create-vault">
+								<i class="fa fa-plus-circle fa-fw"></i>
+								<span class="hidden-xs">Create Vault</span>
+							</a>
+						</div>
+                    </div>
 				<?php } elseif ($_smarty_tpl->tpl_vars['view']->value == "templates") {?>
 					<div class="panel-heading with-icon">
                         <!-- panel title -->

@@ -207,8 +207,8 @@
         <ul class="publisher-tools">
             {if $system['photos_enabled']}
                 <li data-toggle="tooltip" data-placement="top" title='{__("Add Photos")}'>
-                    <span class="publisher-tools-attach js_publisher-photos">
-                        <i class="fa fa-camera fa-fw js_x-uploader" data-handle="publisher" data-multiple="true"></i>
+                    <span class="publisher-tools-attach js_publisher-photos" data-toggle="modal" data-url="#modal-upload_photos">
+                        <i class="fa fa-camera fa-fw " data-handle="publisher" data-multiple="true"></i>
                     </span>
                 </li>
             {/if}

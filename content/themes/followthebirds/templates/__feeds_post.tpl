@@ -16,12 +16,11 @@
 
         <!-- post body -->
         <div class="post-body">
-            
             {include file='__feeds_post.body.tpl' _post=$post _shared=false}
 
             <!-- post stats -->
             <div class="post-stats">
-                <!-- likes -->
+                <!-- likes 
                 <span class="text-clickable" data-toggle="modal" data-url="posts/who_likes.php?post_id={$post['post_id']}">
                     <i class="fa fa-thumbs-o-up"></i> 
                     <span class="js_post-likes-num">
@@ -49,7 +48,7 @@
             <!-- post actions -->
             <div class="post-actions">
                 {if $user->_logged_in}
-                    <!-- like -->
+                    <!-- like 
                     <span class="text-clickable mr20 {if $post['i_like']}text-active js_unlike-post{else}js_like-post{/if}">
                         <i class="fa fa-thumbs-o-up"></i> <span>{__("Like")}</span>
                     </span>

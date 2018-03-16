@@ -562,3 +562,9 @@ ul.st-text-block {
   vertical-align: top;
   width: 49%;
 }
+
+.builder-widget {
+  background: #d9fdd9 none repeat scroll 0 0;
+  border: 1px solid #8ef18e !important;
+  padding: 10px 20px !important;
+}

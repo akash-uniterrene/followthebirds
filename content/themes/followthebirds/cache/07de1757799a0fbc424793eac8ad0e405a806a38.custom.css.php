@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-17 06:32:09
+/* Smarty version 3.1.31, created on 2018-03-14 12:33:28
   from "/home/web/public_sc/Script/content/themes/followthebirds/css/custom.css" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a87cc691c0788_71246910',
+  'unifunc' => 'content_5aa91698dd77e0_83925364',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 3600,
 ),true)) {
-function content_5a87cc691c0788_71246910 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5aa91698dd77e0_83925364 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 /* CSS Document */
 

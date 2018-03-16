@@ -23,6 +23,9 @@
                         <li {if $view == "profile"}class="active"{/if}>
                             <a href="{$system['system_url']}/settings/profile"><i class="fa fa-user fa-fw fa-lg pr10"></i> {__("Edit Profile")}</a>
                         </li>
+                        <li {if $view == "vault"}class="active"{/if}>
+                            <a href="{$system['system_url']}/settings/vault"><i class="fa fa-folder fa-lg pr10"></i> {__("Manage Vault")}</a>
+                        </li>
                         <li {if $view == "privacy"}class="active"{/if}>
                             <a href="{$system['system_url']}/settings/privacy"><i class="fa fa-lock fa-fw fa-lg pr10"></i> {__("Privacy Settings")}</a>
                         </li>
@@ -639,7 +642,32 @@
 								<i class="fa fa-trash mr5"></i>{__("Delete Template")}
 							</button>
 						</div>
-					</div>	
+					</div>
+                {elseif $view == "vault"}
+            
+                        <div class="panel-heading with-icon">
+                            <!-- panel title -->
+                            <i class="fa fa-lock pr5 panel-icon"></i>
+                            <strong>{__("Manage Vault")}</strong>
+                            <!-- panel title -->
+                            <div class="mt10 pull-right flip">
+                                 <button class="btn btn-success btn-sm" data-toggle="modal" data-url="#create-vault">
+                                    <i class="fa fa-plus-circle fa-fw"></i><span class="hidden-xs">{__("Create Vault")}</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            {foreach $folders as $folder}
+                                <div class="col-md-4">
+                                    <a href="{$system['system_url']}/{$user->_data['user_name']}/vault/{$folder}">
+                                        <img width="40"src="{$system['system_url']}/content/themes/{$system['theme']}/images/icons/folder.png">
+                                        <label>{$folder}</label>
+                                    </a>   
+                                </div>        
+                             {/foreach}
+                       </div>   
+                {elseif $view == "add-files"}
+                    {include file='vault-customize.tpl'}	 
 				{elseif $view == "templates"}
 					<div class="panel-heading with-icon">
                         <!-- panel title -->

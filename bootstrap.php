@@ -142,8 +142,8 @@ while($language = $get_languages->fetch_assoc()) {
     $system['languages'][] = $language;
 }
 /* get system currency symbol */
-$Currency = new \NumberFormatter($system['language']['code'] . '@currency=' . $system['system_currency'], \NumberFormatter::CURRENCY);
-$system['system_currency_symbol'] = $Currency->getSymbol(\NumberFormatter::CURRENCY_SYMBOL);
+//$Currency = new \NumberFormatter($system['language']['code'] . '@currency=' . $system['system_currency'], \NumberFormatter::CURRENCY);
+$system['system_currency_symbol'] = '$'; //$Currency->getSymbol(\NumberFormatter::CURRENCY_SYMBOL);
 /* get system theme */
 $get_theme = $db->query("SELECT * FROM system_themes WHERE system_themes.default = '1'") or _error(SQL_ERROR);
 $theme = $get_theme->fetch_assoc();

@@ -52,6 +52,7 @@
             </div>
           {/if}
            <div class="js_hidden-section x-hidden">
+			    {if $system['age_restriction']}
                 <div class="form-group">
                     <select name="gender" id="gender" class="form-control" required>
                         <option value="none">{__("Select Sex")}:</option>
@@ -59,8 +60,7 @@
                         <option value="female">{__("Female")}</option>
                     </select>
                     <span class=form-icon><img src="{$system['system_url']}/content/themes/{$system['theme']}/images/user-icon.png" alt="#"></span>
-                </div>   
-          {if $system['age_restriction']}
+                </div>            
                 <div class="form-group">
                     <label>{__("Birthdate")}</label>
                     <div class="row">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-            {/if}
+				{/if}
             <!-- custom fields -->
             {if $custom_fields}
             {include file='__custom_fields.tpl' _custom_fields=$custom_fields _registration=true}

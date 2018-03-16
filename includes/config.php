@@ -2,7 +2,7 @@
 define("DB_NAME", "followdbirds");
 define("DB_USER", "root");
 define("DB_PASSWORD", "");
-define("DB_HOST", "localhost");
+define("DB_HOST", "192.168.10.137");
 define("SYS_URL", "http://localhost/public_sc/Script");
 define("DEBUGGING", true);
 define("DEFAULT_LOCALE", "en_us");

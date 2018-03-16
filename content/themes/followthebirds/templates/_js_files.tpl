@@ -112,12 +112,13 @@
 <script src="{$system['system_url']}/includes/assets/js/mustache/mustache.min.js" {if !$user->_logged_in}defer{/if}></script>
 <!-- Dependencies Libs [jQuery|Bootstrap|Mustache] -->
 {else}
- <link rel="stylesheet" type='text/css' href="{$system['system_url']}/includes/assets/js/plugins/carousel/owl.carousel.css">
+<link rel="stylesheet" type='text/css' href="{$system['system_url']}/includes/assets/js/plugins/carousel/owl.carousel.css">
 <script src="{$system['system_url']}/includes/assets/js/jquery/jquery.min.js" {if !$user->_logged_in}defer{/if}></script>
 <script src="{$system['system_url']}/includes/assets/js/bootstrap/bootstrap.min.js" {if !$user->_logged_in}defer{/if}></script>    
 <script src="{$system['system_url']}/includes/assets/js/plugins/carousel/owl.carousel.min.js" {if !$user->_logged_in}defer{/if}></script>    
-<script src="{$system['system_url']}/includes/assets/js/sngine/custom.js" {if !$user->_logged_in}defer{/if}></script>
+
 {/if}
+<script src="{$system['system_url']}/includes/assets/js/sngine/custom.js" {if !$user->_logged_in}defer{/if}></script> 
 <!-- Dependencies Plugins -->
 <script src="{$system['system_url']}/includes/assets/js/plugins/fastclick/fastclick.min.js" {if !$user->_logged_in}defer{/if}></script>
 

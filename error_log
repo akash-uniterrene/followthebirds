@@ -1,0 +1,11 @@
+[13-Mar-2018 10:39:31 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uniterreneprojec/public_html/dev/followthebirds/settings.php on line 74
+[13-Mar-2018 10:39:33 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uniterreneprojec/public_html/dev/followthebirds/settings.php on line 74
+[13-Mar-2018 10:39:36 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uniterreneprojec/public_html/dev/followthebirds/settings.php on line 74
+[13-Mar-2018 10:40:24 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uniterreneprojec/public_html/dev/followthebirds/settings.php on line 74
+[13-Mar-2018 10:41:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uniterreneprojec/public_html/dev/followthebirds/settings.php on line 73
+[14-Mar-2018 07:24:05 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 138
+[14-Mar-2018 07:24:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 138
+[14-Mar-2018 07:24:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 138
+[14-Mar-2018 07:24:38 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 138
+[14-Mar-2018 07:25:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 138
+[15-Mar-2018 07:29:22 UTC] PHP Fatal error:  'break' operator with non-constant operand is no longer supported in /home/uniterreneprojec/public_html/dev/followthebirds/profile.php on line 150

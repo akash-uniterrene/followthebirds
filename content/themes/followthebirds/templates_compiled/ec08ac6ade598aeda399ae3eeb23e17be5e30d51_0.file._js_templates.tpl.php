@@ -1,33 +1,41 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-01 10:43:33
+/* Smarty version 3.1.31, created on 2018-03-14 12:35:50
   from "/home/web/public_sc/Script/content/themes/followthebirds/templates/_js_templates.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a72ef55a4dac6_80171197',
+  'unifunc' => 'content_5aa91726036476_59000475',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec08ac6ade598aeda399ae3eeb23e17be5e30d51' => 
     array (
       0 => '/home/web/public_sc/Script/content/themes/followthebirds/templates/_js_templates.tpl',
-      1 => 1510159633,
+      1 => 1521030916,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:_upload_photos.tpl' => 1,
     'file:_emoji-menu.tpl' => 4,
   ),
 ),false)) {
-function content_5a72ef55a4dac6_80171197 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5aa91726036476_59000475 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Modals --><div id="modal" class="modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="loader pt10 pb10"></div></div></div></div></div><?php echo '<script'; ?>
  id="modal-login" type="text/template"><div class="modal-header"><h5 class="modal-title"><?php echo __("Not Logged In");?>
 </h5></div><div class="modal-body"><p><?php echo __("Please log in to continue");?>
 </p></div><div class="modal-footer"><a class="btn btn-primary" href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
 /signin"><?php echo __("Login");?>
+</a></div><?php echo '</script'; ?>
+><?php echo '<script'; ?>
+ id="modal-upload_photos" type="text/template"><div class="modal-header"><h5 class="modal-title"><?php echo __("Upload Photos");?>
+</h5></div><div class="modal-body"><?php $_smarty_tpl->_subTemplateRender('file:_upload_photos.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+</div><div class="modal-footer"><a class="btn btn-primary" href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
+/signin"><?php echo __("Insert");?>
 </a></div><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  id="modal-message" type="text/template"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">×</button><h5 class="modal-title">{{title}}</h5></div><div class="modal-body"><p>{{message}}</p></div><?php echo '</script'; ?>

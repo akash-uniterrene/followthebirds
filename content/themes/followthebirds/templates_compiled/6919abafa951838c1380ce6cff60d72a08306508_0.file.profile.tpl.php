@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-17 09:42:34
+/* Smarty version 3.1.31, created on 2018-02-20 06:11:49
   from "/home/web/public_sc/Script/content/themes/followthebirds/templates/profile.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a87f90ac3ba69_05863451',
+  'unifunc' => 'content_5a8bbc2538cfe4_16515620',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6919abafa951838c1380ce6cff60d72a08306508' => 
     array (
       0 => '/home/web/public_sc/Script/content/themes/followthebirds/templates/profile.tpl',
-      1 => 1518860552,
+      1 => 1519049809,
       2 => 'file',
     ),
   ),
@@ -34,13 +34,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_footer.tpl' => 1,
   ),
 ),false)) {
-function content_5a87f90ac3ba69_05863451 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a8bbc2538cfe4_16515620 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'toHtml' => 
   array (
     'compiled_filepath' => '/home/web/public_sc/Script/content/themes/followthebirds/templates_compiled/6919abafa951838c1380ce6cff60d72a08306508_0.file.profile.tpl.php',
     'uid' => '6919abafa951838c1380ce6cff60d72a08306508',
-    'call_name' => 'smarty_template_function_toHtml_14627184155a87f90a7bcfe1_92106494',
+    'call_name' => 'smarty_template_function_toHtml_17298604405a8bbc24d3aa87_30775685',
   ),
 ));
 if (!is_callable('smarty_modifier_date_format')) require_once '/home/web/public_sc/Script/includes/libs/Smarty/plugins/modifier.date_format.php';
@@ -897,9 +897,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 
 <?php $_smarty_tpl->_subTemplateRender('file:_footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
-/* smarty_template_function_toHtml_14627184155a87f90a7bcfe1_92106494 */
-if (!function_exists('smarty_template_function_toHtml_14627184155a87f90a7bcfe1_92106494')) {
-function smarty_template_function_toHtml_14627184155a87f90a7bcfe1_92106494($_smarty_tpl,$params) {
+/* smarty_template_function_toHtml_17298604405a8bbc24d3aa87_30775685 */
+if (!function_exists('smarty_template_function_toHtml_17298604405a8bbc24d3aa87_30775685')) {
+function smarty_template_function_toHtml_17298604405a8bbc24d3aa87_30775685($_smarty_tpl,$params) {
 $params = array_merge(array('level'=>0), $params);
 foreach ($params as $key => $value) {
 $_smarty_tpl->tpl_vars[$key] = new Smarty_Variable($value, $_smarty_tpl->isRenderingCache);
@@ -949,11 +949,37 @@ foreach ($_from as $_smarty_tpl->tpl_vars['block']->value) {
 										<p style="<?php echo $_smarty_tpl->tpl_vars['block']->value['data']['style_property'];?>
 "><?php echo $_smarty_tpl->tpl_vars['block']->value['data']['text'];?>
 </p>
+									<?php } elseif ($_smarty_tpl->tpl_vars['block']->value['type'] == 'video') {?>
+										<?php if ($_smarty_tpl->tpl_vars['block']->value['data']['source'] == 'youtube') {?>
+											<div class="page-builder-container">
+												<div class="embed-responsive embed-responsive-16by9">
+												<iframe src="//www.youtube.com/embed/<?php echo $_smarty_tpl->tpl_vars['block']->value['data']['remote_id'];?>
+?rel=0" frameborder="0" allowfullscreen></iframe>
+											</div>
+										<?php } elseif ($_smarty_tpl->tpl_vars['block']->value['data']['source'] == 'vimeo') {?>		
+												<div class="page-builder-container">
+													<div class="embed-responsive embed-responsive-16by9">
+											<iframe src="//player.vimeo.com/video/<?php ob_start();
+echo $_smarty_tpl->tpl_vars['block']->value['data']['remote_id'];
+$_prefixVariable1=ob_get_clean();
+echo $_prefixVariable1;?>
+?title=0&amp;byline=0" frameborder="0"></iframe>
+													</div>
+												</div>
+										<?php } else { ?>
+											<div class="page-builder-container">
+												<video controls> 
+													<source src="<?php echo $_smarty_tpl->tpl_vars['block']->value['data']['file']['url'];?>
+" type="video/mp4">
+												</video>
+											</div>
+										<?php }?>		
 									 <?php } elseif ($_smarty_tpl->tpl_vars['block']->value['type'] == 'photo') {?>
 										<?php if (count($_smarty_tpl->tpl_vars['profile']->value['photos']) > 0) {?>
 											<div class="panel panel-default panel-photos">
 												<div class="panel-heading">
-													<i class="fa fa-picture-o fa-fw text-info"></i> <a href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
+													<i class="fa fa-picture-o fa-fw text-info"></i>
+													<a href="<?php echo $_smarty_tpl->tpl_vars['system']->value['system_url'];?>
 /<?php echo $_smarty_tpl->tpl_vars['profile']->value['user_name'];?>
 /photos"><?php echo __("Photos");?>
 </a>
@@ -1335,5 +1361,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 						</div>	
 					<?php
 }}
-/*/ smarty_template_function_toHtml_14627184155a87f90a7bcfe1_92106494 */
+/*/ smarty_template_function_toHtml_17298604405a8bbc24d3aa87_30775685 */
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2018-02-01 10:43:33
+/* Smarty version 3.1.31, created on 2018-03-14 12:08:41
   from "/home/web/public_sc/Script/content/themes/followthebirds/templates/__feeds_post.body.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5a72ef5558d519_50819109',
+  'unifunc' => 'content_5aa910c942ebe6_68527326',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4eaacc9d8449abffa89e4455557c145b81a1bfb' => 
     array (
       0 => '/home/web/public_sc/Script/content/themes/followthebirds/templates/__feeds_post.body.tpl',
-      1 => 1509912026,
+      1 => 1521028406,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:__feeds_post.body.tpl' => 2,
   ),
 ),false)) {
-function content_5a72ef5558d519_50819109 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5aa910c942ebe6_68527326 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_truncate')) require_once '/home/web/public_sc/Script/includes/libs/Smarty/plugins/modifier.truncate.php';
 ?>
 <!-- post header -->
